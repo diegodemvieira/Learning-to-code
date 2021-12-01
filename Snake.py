@@ -139,7 +139,7 @@ def redrawWindow(surface):
     global rows, width, s, snack
     surface.fill((0,0,0))
     s.draw(surface)
-    snack.draw(surface)
+    snack.draw(surface) # works partialy when this line is commented. FFKS I have no idea why.
     drawGrid(width, rows, surface)
     pygame.display.update()
     
